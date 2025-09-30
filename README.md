@@ -1,1 +1,1 @@
-# repositorio_sinodal
+# Repositório Sinodal Prado
