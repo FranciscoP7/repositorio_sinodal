@@ -1,4 +1,4 @@
-/* ... Seu CSS existente ... */
+
 
 :root {
     --primary-color: #006815;
@@ -16,7 +16,128 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ... Seu CSS existente ... */
+/* Comentario diretor e coordencao  */
+
+/* Estilo da secao do diretor */
+.director-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 60px 0;
+    padding: 30px;
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.director-image {
+    flex: 0 0 220px; /* largura fixa da area da foto */
+    text-align: center;
+}
+
+.director-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    border: 4px solid var(--primary-light);
+    transition: transform 0.3s ease;
+}
+
+.director-image img:hover {
+    transform: scale(1.05);
+}
+
+.director-image p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.director-text {
+    flex: 1;
+}
+
+.director-text .intro-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.section-words {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+     margin: 0px 0px 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-words::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-light);
+    margin: 6px auto 0;
+    border-radius: 2px;
+}
+/* Estilo da secao da coordenacao */
+
+.coordination-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 60px 0;
+    padding: 30px;
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.coordination-image {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.coordination-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    border: 4px solid var(--primary-light);
+    transition: transform 0.3s ease;
+}
+
+.coordination-image img:hover {
+    transform: scale(1.05);
+}
+
+.coordination-image p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.coordination-text {
+    flex: 1;
+}
+
+.coordination-text .intro-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    text-align: justify;
+}
+
 
 /* Estilos do Carrossel */
 .carousel-container {
@@ -260,6 +381,7 @@
   max-height: 1000px; /* altura grande suficiente */
   padding: 15px;
 }
+
 
 /* ... Estilos Responsivos ... */
 @media (max-width: 768px) {
@@ -647,7 +769,52 @@ footer {
         width: 95%;
         height: 70vh;
     }
+ 
+    .director-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .director-image {
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .director-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .director-text .intro-text {
+        text-align: left;
+        font-size: 0.95rem;
+    }
+    
+    .coordination-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .coordination-image {
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .coordination-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .coordination-text .intro-text {
+        text-align: left;
+        font-size: 0.95rem;
+    }
 }
+
 
 
 .fade-in {
