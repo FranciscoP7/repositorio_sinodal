@@ -16,7 +16,41 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
 
+        .nav-menu a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
 
 header {
     position: absolute;
@@ -25,7 +59,7 @@ header {
     right: 0;
   
     display: flex;
-    justify-content: space-between; /* mantém: home | (nav + logo) */
+    justify-content: space-between; 
     align-items: center;
   
     padding: 10px 40px;
@@ -35,13 +69,13 @@ header {
     box-shadow: var(--shadow-sm);
   }
   
-  /* Agrupa o nav + logo no lado direito */
+ 
   header .right-group {
     display: flex;
     align-items: center;
     gap: 35px;
   }
-  /* Mantém estrutura principal */
+  
   header {
     position: absolute;
     top: 0;
@@ -59,18 +93,16 @@ header {
     box-shadow: var(--shadow-sm);
   }
   
-  /* AGRUPA nav + logo e permite controlar a distância */
   .right-group {
     display: flex;
     align-items: center;
-    gap: 25px; /* distância entre NAV e LOGO — ajuste aqui */
+    gap: 25px; 
   }
-  
-  /* Nav ao lado esquerdo da logo, com pouco espaço */
+
   .header-nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* distância entre os itens do menu */
+    gap: 20px; 
   }
   
   .header-nav a {
@@ -98,43 +130,51 @@ header {
   }
 
 .header-section {
-    /* Overlay para escurecer a imagem e destacar o texto */
+   
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('../imagens/sinodal.png'); /* Ajuste o caminho se necessário */
-    
+        linear-gradient(
+            to top, 
+            var(--bg-light) 10%,     
+           rgba(255, 255, 255, 0) 50%,    
+            rgba(255, 255, 255, 0) 100% 
+        ),
+       
+        url('../imagens/sinodal.png'); 
+         
+       
+    opacity: 1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Altura total da tela */
+    height: 100vh; 
     
-    /* FLEXBOX: Centraliza o conteúdo (o h1) vertical e horizontalmente */
+  
     display: flex;
     justify-content: center; 
     align-items: center;     
     text-align: center;      
 }
-/* Estilos para o Conteúdo (o texto) */
+
+
+
 .header-section h1 {
-    /* Cor do Texto: Seu verde primário */
+   
     color: var(--primary-color); 
     
-    /* Efeito de Brilho Branco (Glow) */
     text-shadow: 
         0 0 3px #fff, 
         0 0 5px #fff, 
         0 0 15px #fff; 
     
-    /* Outros estilos para o título */
+  
     font-family: 'Bebas Neue', sans-serif; 
-    font-size: 4rem; 
+    font-size: 6rem; 
     margin: 0;
     padding: 0 20px; 
 }
 
 
 
-/* Estilo da secao do editorial */
 .editorial-info {
     display: flex;
     align-items: flex-start;
@@ -200,7 +240,7 @@ header {
     justify-content: left;
     align-items: left;
 }
-/* Estilo da secao do diretor */
+
 .director-info {
     display: flex;
     align-items: flex-start;
@@ -270,7 +310,7 @@ header {
     margin: 6px auto 0;
     border-radius: 2px;
 }
-/* Estilo da secao da coordenacao */
+
 
 .coordination-info {
     display: flex;
@@ -333,7 +373,7 @@ header {
     ;
 }
 
-/* Estilos do Carrossel */
+
 .carousel-container {
     position: relative;
     width: 100%;
@@ -931,17 +971,15 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;   /* alinha as 3 colunas na mesma linha */
+  align-items: center;   
   gap: 40px;
 }
 
-/* Cada coluna do footer */
 .footer-column {
   flex: 1;
   min-width: 220px;
 }
 
-/* EXPEDIENTE – esquerda */
 .footer-expediente {
   text-align: left;
   font-size: 0.9rem;
@@ -954,7 +992,7 @@ footer {
   font-weight: 600;
 }
 
-/* LOGO – centro */
+
 .footer-logo-center {
   text-align: center;
 }
@@ -970,7 +1008,7 @@ footer {
   transform: scale(1.05);
 }
 
-/* INFO / CRÉDITOS – direita */
+
 .footer-info {
   text-align: right;
 }

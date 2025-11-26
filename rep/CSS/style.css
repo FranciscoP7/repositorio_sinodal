@@ -27,10 +27,7 @@
   margin:0px;
 }
 
-/* Comentario diretor e coordencao  */
 
-
-/* Estilo da secao do editorial */
 .editorial-info {
   display: flex;
   align-items: flex-start;
@@ -96,7 +93,6 @@
   justify-content: left;
   align-items: left;
 }
-/* Estilo da secao do diretor */
 .director-info {
   display: flex;
   align-items: flex-start;
@@ -166,7 +162,6 @@
   margin: 6px auto 0;
   border-radius: 2px;
 }
-/* Estilo da secao da coordenacao */
 
 .coordination-info {
   display: flex;
@@ -229,7 +224,6 @@
   ;
 }
 
-/* Estilos do Carrossel */
 .carousel-container {
   position: relative;
   width: 100%;
@@ -808,17 +802,17 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;   /* alinha as 3 colunas na mesma linha */
+  align-items: center;  
   gap: 40px;
 }
 
-/* Cada coluna do footer */
+
 .footer-column {
   flex: 1;
   min-width: 220px;
 }
 
-/* EXPEDIENTE – esquerda */
+
 .footer-expediente {
   text-align: left;
   font-size: 0.9rem;
@@ -831,7 +825,6 @@ footer {
   font-weight: 600;
 }
 
-/* LOGO – centro */
 .footer-logo-center {
   text-align: center;
 }
@@ -847,7 +840,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* INFO / CRÉDITOS – direita */
 .footer-info {
   text-align: right;
 }
@@ -984,7 +976,6 @@ a:focus-visible {
 }
 
 
-/* Barra de pesquisa do repositório */
 .search-bar {
   max-width: 600px;
   margin: 0 auto 30px;
@@ -1011,7 +1002,6 @@ a:focus-visible {
   color: var(--text-light);
 }
 
-/* Acessibilidade: esconder texto visualmente mas manter para leitores de tela */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1025,7 +1015,7 @@ a:focus-visible {
 }
 
 .highlight {
-  background-color: #a5f5b5; /* verde claro */
+  background-color: #a5f5b5; 
   transition: background-color 0.6s ease;
 }
 
@@ -1036,7 +1026,7 @@ header {
   right: 0;
 
   display: flex;
-  justify-content: space-between; /* mantém: home | (nav + logo) */
+  justify-content: space-between; 
   align-items: center;
 
   padding: 10px 40px;
@@ -1046,13 +1036,12 @@ header {
   box-shadow: var(--shadow-sm);
 }
 
-/* Agrupa o nav + logo no lado direito */
 header .right-group {
   display: flex;
   align-items: center;
   gap: 35px;
 }
-/* Mantém estrutura principal */
+
 header {
   position: absolute;
   top: 0;
@@ -1070,18 +1059,16 @@ header {
   box-shadow: var(--shadow-sm);
 }
 
-/* AGRUPA nav + logo e permite controlar a distância */
 .right-group {
   display: flex;
   align-items: center;
-  gap: 25px; /* distância entre NAV e LOGO — ajuste aqui */
+  gap: 25px; 
 }
 
-/* Nav ao lado esquerdo da logo, com pouco espaço */
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 20px; /* distância entre os itens do menu */
+  gap: 20px; 
 }
 
 .header-nav a {
@@ -1101,7 +1088,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* Logo */
 .logo-1 img {
   max-width: 140px;
   height: auto;
