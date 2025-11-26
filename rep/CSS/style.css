@@ -808,9 +808,32 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  align-items: center;   /* alinha as 3 colunas na mesma linha */
+  gap: 40px;
+}
+
+/* Cada coluna do footer */
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* EXPEDIENTE – esquerda */
+.footer-expediente {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-expediente h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* LOGO – centro */
+.footer-logo-center {
+  text-align: center;
 }
 
 .prado-logo img {
@@ -818,29 +841,37 @@ footer {
   height: auto;
   filter: brightness(0) invert(1);
   transition: var(--transition);
-  
 }
 
 .prado-logo:hover img {
   transform: scale(1.05);
 }
 
+/* INFO / CRÉDITOS – direita */
 .footer-info {
   text-align: right;
 }
 
-.footer-info p a {
+.footer-info p {
   margin-bottom: 8px;
   font-size: 0.9rem;
-  opacity: 0.9;
+  opacity: 0.95;
+}
+
+.footer-info a,
+.footer-expediente a,
+.footer-info .ln-fran {
   color: white;
   text-decoration: none;
-  
 }
-.footer-info p a:hover {
+
+.footer-info a:hover,
+.footer-expediente a:hover,
+.footer-info .ln-fran:hover {
   text-decoration: underline;
   opacity: 1;
 }
+
 
 
 
