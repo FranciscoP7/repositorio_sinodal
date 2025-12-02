@@ -612,7 +612,7 @@ header {
 }
 
 .year-content.active {
-  max-height: 1000px; 
+  max-height: none; 
   padding: 15px;
 }
 
@@ -1041,147 +1041,6 @@ footer {
 
 
 
-@media (max-width: 768px) {
-    header {
-        position: absolute;   /* mantém fixo no topo da página, como já estava */
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;      /* empilha os itens */
-        align-items: flex-start;     /* alinha à esquerda */
-        padding: 10px 16px 14px;
-        height: auto;                /* altura se ajusta ao conteúdo */
-        gap: 8px;                    /* espaço entre as “linhas” */
-      }
-    
-      .home {
-        width: 42px;
-        height: 42px;
-      }
-    
-      .right-group {
-        width: 100%;
-        display: flex;
-        flex-direction: column;      /* nav em cima, logo embaixo */
-        align-items: stretch;
-        gap: 8px;
-      }
-    
-      .header-nav {
-        display: flex;
-        justify-content: space-around;
-        gap: 10px;
-        width: 100%;
-      }
-    
-      .header-nav a {
-        font-size: 0.85rem;
-        padding: 6px 10px;
-        text-align: center;
-        flex: 1;                     /* cada link ocupa metade da largura */
-      }
-    
-      .logo-1 {
-        align-self: center;          /* logo centralizada */
-      }
-    
-      .logo-1 img {
-        max-width: 130px;
-        height: auto;
-      }
-
-    .logo-1 img {
-        max-width: 120px;
-    }
-
-    main {
-        padding: 0 15px;
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-    }
-
-    .files-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .file-card {
-        padding: 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .footer-column,
-    .footer-expediente,
-    .footer-info {
-        text-align: center;
-    }
-
-    .modal-content {
-        width: 95%;
-        height: 70vh;
-    }
- 
-    .director-info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .director-image {
-        flex: none;
-        margin-bottom: 20px;
-    }
-
-    .director-image img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .director-text .intro-text {
-        text-align: left;
-        font-size: 0.95rem;
-    }
-    
-    .coordination-info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .coordination-image {
-        flex: none;
-        margin-bottom: 20px;
-    }
-
-    .coordination-image img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .coordination-text .intro-text {
-        text-align: left;
-        font-size: 0.95rem;
-    }
-    .header-image-container img{ 
-        max-width: 100%; 
-        height: auto;    
-        display: block; 
-    }
-    .header-section h1 {
-        font-size: 2.5rem; 
-    }
-}
-
 
 
 .fade-in {
@@ -1198,3 +1057,125 @@ a:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
+
+/* ===========================
+   📌 MENU HAMBÚRGUER (MOBILE)
+   =========================== */
+
+/* Checkbox controlador (não aparece) */
+.menu-toggle-checkbox {
+    display: none;
+  }
+  
+  /* Botão hambúrguer – escondido no desktop */
+  .menu-toggle {
+    display: none;
+    width: 40px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-top: 4px; /* um pouquinho mais baixo */
+  }
+  
+  .menu-toggle span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 999px;
+    transition: 0.25s ease;
+  }
+  
+  /* linhas do hambúrguer */
+  .menu-toggle span:nth-child(1) { top: 6px; }
+  .menu-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+  .menu-toggle span:nth-child(3) { bottom: 6px; }
+  
+  /* animação vira X */
+  .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(3) {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  /* ===========================
+     📌 MOBILE STYLE
+     =========================== */
+     @media (max-width: 768px) {
+
+        
+        header {
+          position: relative;
+          height: auto;
+          padding: 10px 20px;
+          align-items: flex-start;
+        }
+      
+        .right-group {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      
+        .logo-1 {
+          order: 0;
+          margin: 0 auto;
+        }
+      
+        .logo-1 img {
+          max-width: 100px;
+        }
+      
+        .menu-toggle {
+          display: block;
+          order: 1;
+          margin-left: auto;
+        }
+      
+        /* 🔽 aqui a mágica: o menu vai para DEPOIS da logo + X */
+        .nav-menu {
+          order: 2;                 /* fica embaixo da logo e do X */
+          width: 100%;
+          margin-top: 12px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: var(--bg-white);
+          box-shadow: var(--shadow-lg);
+          border-radius: 12px;
+          padding: 16px 22px;
+          gap: 12px;
+          display: none;            /* fechado por padrão */
+        }
+      
+        .nav-menu li {
+          list-style: none;
+          width: 100%;
+        }
+      
+        .nav-menu li a {
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+        }
+      
+        .menu-toggle-checkbox:checked ~ .nav-menu {
+          display: flex;
+        }
+      }
+      
