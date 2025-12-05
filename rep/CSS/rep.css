@@ -867,6 +867,7 @@ header {
 }
 
 .nav-menu {
+  position: relative;
   display: flex;
   list-style: none;
   gap: 25px;
@@ -973,11 +974,16 @@ header {
 
 @media (max-width: 768px) {
 
+  .header-section {
+    height:auto;
+    padding: 80px 0 20px;
+}
+
   header {
     position: relative;
     height: auto;
     padding: 10px 20px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .right-group {
@@ -1009,7 +1015,7 @@ header {
   .nav-menu {
     order: 2;                 /* fica embaixo da logo e do X */
     width: 100%;
-    margin-top: 12px;
+    margin-top: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1033,7 +1039,7 @@ header {
   }
 
   .menu-toggle-checkbox:checked ~ .nav-menu {
-    display: flex;
+    display: block;
   }
 }
 
@@ -1041,14 +1047,14 @@ header {
   /* menu vira bloco abaixo do header, dentro do fluxo (clicável) */
   .nav-menu {
     width: 100%;
-    margin-top: 10px;
+    margin-top: -60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--bg-white);
     box-shadow: var(--shadow-lg);
     border-radius: 12px;
-    padding: 16px 22px;
+    padding: 10px 22px;
     gap: 12px;
 
     /* fechado por padrão */

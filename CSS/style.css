@@ -1116,67 +1116,76 @@ a:focus-visible {
 
         
         header {
-          position: relative;
-          height: auto;
-          padding: 10px 20px;
-          align-items: flex-start;
-        }
-      
-        .right-group {
-          flex: 1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          flex-wrap: wrap;
-          gap: 10px;
-        }
-      
-        .logo-1 {
-          order: 0;
-          margin: 0 auto;
-        }
-      
-        .logo-1 img {
-          max-width: 100px;
-        }
-      
-        .menu-toggle {
-          display: block;
-          order: 1;
-          margin-left: auto;
-        }
-      
-        /* 🔽 aqui a mágica: o menu vai para DEPOIS da logo + X */
-        .nav-menu {
-          order: 2;                 /* fica embaixo da logo e do X */
-          width: 100%;
-          margin-top: 3px;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background: var(--bg-white);
-          box-shadow: var(--shadow-lg);
-          border-radius: 12px;
-          padding: 16px 22px;
-          gap: 12px;
-          display: none;            /* fechado por padrão */
-        }
-      
-        .nav-menu li {
-          list-style: none;
-          width: 100%;
-        }
-      
-        .nav-menu li a {
-          width: 100%;
-          text-align: center;
-          padding: 10px;
-        }
-      
-        .menu-toggle-checkbox:checked ~ .nav-menu {
-          display: flex;
-        }
+            position: fixed;        /* se quiser fixo no topo */
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 72px;           /* altura fixa -> home não mexe */
+            padding: 10px 20px;
+            align-items: center;    /* NÃO flex-start */
+          }
+        
+          .right-group {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;     /* referência pro menu absoluto */
+            gap: 10px;
+          }
+        
+          .logo-1 {
+            margin: 0 auto;
+            order: 0;
+          }
+        
+          .logo-1 img {
+            max-width: 100px;
+          }
+        
+          .menu-toggle {
+            display: block;
+            order: 1;
+            margin-left: auto;
+          }
+        
+          /* MENU MOBILE */
+          .nav-menu {
+            position: absolute;
+            top: 110%;              /* logo abaixo do header */
+            right: 16px;
+            left: 16px;
+        
+            display: none;          /* escondido por padrão */
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        
+            background: var(--bg-white);
+            box-shadow: var(--shadow-lg);
+            border-radius: 16px;
+            padding: 18px 24px;
+            gap: 14px;
+            z-index: 1500;
+          }
+        
+          .nav-menu li {
+            list-style: none;
+            width: 100%;
+          }
+        
+          .nav-menu li a {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            text-align: left;
+            font-size: 1rem;
+          }
+        
+          /* abre o menu sem mudar a altura do header */
+          .menu-toggle-checkbox:checked ~ .nav-menu {
+            display: flex;
+          }
       }
 
    @media (max-width: 768px) {
