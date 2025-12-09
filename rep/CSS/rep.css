@@ -1145,7 +1145,9 @@ a:focus-visible {
   .file-card {
     padding: 18px;
   }
-
+  .file-action{
+    display: none;
+  }
   .footer-content {
     flex-direction: column;
     gap: 20px;
