@@ -16,7 +16,7 @@ A **Revista Prado Acadêmico** é uma plataforma web criada por **estudantes do 
 
 O projeto nasceu com a proposta de transformar a produção acadêmica dos estudantes em uma experiência digital, permitindo que os trabalhos científicos desenvolvidos pelos alunos fossem organizados, publicados e disponibilizados para acesso através da internet.
 
-A plataforma funciona como um espaço digital para a revista acadêmica do colégio, reunindo pesquisas, artigos e trabalhos produzidos pelos estudantes.
+A plataforma funciona como um espaço digital para a revista acadêmica do colégio, reunindo artigos produzidos pelos estudantes.
 
 Mais do que um projeto de desenvolvimento web, a Revista Prado Acadêmico representa a aplicação prática dos conhecimentos adquiridos dentro da própria escola, transformando uma necessidade real do colégio em uma solução digital.
 
@@ -37,19 +37,6 @@ O projeto foi desenvolvido com o objetivo de:
 
 ---
 
-## ✨ Funcionalidades
-
-- 🏠 Página inicial da revista;
-- 📚 Catálogo de trabalhos acadêmicos;
-- 🔎 Repositório para consulta das pesquisas;
-- 📄 Acesso aos artigos completos;
-- 👨‍🎓 Informações sobre os autores;
-- 🏷️ Organização dos trabalhos;
-- 📱 Interface responsiva;
-- 🌐 Publicação e acesso através da internet.
-
----
-
 ## 🛠️ Tecnologias
 
 As tecnologias utilizadas no desenvolvimento do projeto incluem:
@@ -60,30 +47,13 @@ As tecnologias utilizadas no desenvolvimento do projeto incluem:
 
 ---
 
-## 🤝 Desenvolvimento
-
-O projeto foi desenvolvido em parceria por **estudantes do Colégio Sinodal Prado**, unindo conhecimentos de programação, desenvolvimento web, organização de conteúdo e design de interfaces.
-
-Durante o desenvolvimento, foram trabalhadas etapas como:
-
-- Estruturação da plataforma;
-- Desenvolvimento das páginas;
-- Organização e apresentação dos artigos;
-- Criação da interface;
-- Adaptação para diferentes dispositivos;
-- Organização do conteúdo acadêmico;
-- Publicação do projeto na internet.
-
-O desenvolvimento da plataforma proporcionou uma experiência prática de criação de uma solução tecnológica para uma **necessidade real da própria instituição de ensino**.
-
----
 
 ## 🧑‍💻 Equipe
 
 Projeto desenvolvido por:
 
-- **[Seu Nome]**
-- **Matheus**
+- **Francisco**
+- **Matheus** - @mat1631
 
 ### 🏫 Instituição
 
@@ -126,5 +96,5 @@ A criação da plataforma possibilitou unir **educação, pesquisa e tecnologia*
 ---
 
 <p align="center">
-  Desenvolvido por estudantes do <strong>Colégio Sinodal Prado</strong> para o <strong>Colégio Sinodal Prado</strong>. ❤️
+  Desenvolvido por estudantes do <strong>Colégio Sinodal Prado</strong> para o <strong>Colégio Sinodal Prado</strong>. 
 </p>
