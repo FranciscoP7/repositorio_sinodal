@@ -30,3 +30,42 @@ Projeto desenvolvido por estudantes do **Colégio Sinodal Prado** para o **Colé
 ---
 
 > Um espaço para preservar o conhecimento produzido pelos alunos e inspirar as próximas gerações.
+
+---
+
+# 🇺🇸 English
+
+## 📚 About the Project
+
+This repository was created to organize, preserve, and make available the academic work produced by students of **Colégio Sinodal Prado** over the years. The initiative was created to bring these productions together in an accessible digital space, allowing students, teachers, and other members of the school community to explore previously developed research and projects.
+
+In addition to recognizing the effort and dedication of students who have been part of the school, this project aims to preserve part of the institution's academic history and encourage knowledge sharing between different generations.
+
+The repository contains projects developed by students across different subjects and areas of study, organized to make their content easy to find, access, and use as a reference. Previous projects can serve as sources of inspiration and support for students beginning their own research.
+
+The website accompanying this repository was developed by students of **Colégio Sinodal Prado** as an opportunity to apply web development knowledge to a real need within their own school. The platform was designed with simplicity, organization, and responsiveness in mind, providing an accessible experience on both computers and mobile devices.
+
+The development of this project also represents an opportunity for learning and collaboration, covering everything from structuring and organizing information to developing and publishing the platform. By transforming a need within the school community into a digital solution, the project brings together **technology, education, and academic research** in one place.
+
+Overall, the **Revista Prado Acadêmico** aims to preserve the academic work produced by students and create a digital archive that can continue to grow over the years. The initiative seeks to make knowledge produced within the school more accessible, encourage new research, and provide future generations of students with references and materials to support their academic journey.
+
+## 🌐 Access
+
+The project is available at:
+
+**https://revista.sinodalprado.com.br**
+
+## 👨‍💻 Development
+
+Developed by students of **Colégio Sinodal Prado** for **Colégio Sinodal Prado**.
+
+- Francisco
+- Matheus [https://github.com/mat1631]
+
+## 🏫 Institution
+
+**Colégio Sinodal Prado**
+
+---
+
+> A space to preserve the knowledge produced by students and inspire future generations.
