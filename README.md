@@ -21,7 +21,7 @@ O projeto está disponível em:
 Projeto desenvolvido por estudantes do **Colégio Sinodal Prado** para o **Colégio Sinodal Prado**.
 
 - Francisco
-- @Mat1631 [https://github.com/mat1631]
+- Matheus [https://github.com/mat1631]
 
 ## 🏫 Instituição
 
